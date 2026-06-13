@@ -2,38 +2,85 @@
 
 A role-based Content Management System developed using PHP, MySQL, Bootstrap 5, and MVC Architecture.
 
-## Project Overview
-
-RideAlly CMS is a web-based content management platform designed to streamline article publishing and collaborative content creation. The system enables users with different roles to interact with the application according to their assigned permissions.
-
-The project demonstrates the practical implementation of the MVC (Model–View–Controller) architectural pattern using core PHP without external frameworks. It was developed as part of summer training to strengthen understanding of backend development concepts, routing mechanisms, authentication systems, database integration, and role-based access control.
-
 ## Live Demo
 
 Website URL:
 
 https://rideallycms.infinityfreeapp.com/public/
 
+## Demo Credentials
+
+### Administrator
+
+Email:
+admin@rideally.com
+
+Password:
+admin123
+
+---
+
+### Editor
+
+Email:
+editor@rideally.com
+
+Password:
+editor123
+
+---
+
+### Author
+
+Email:
+author@rideally.com
+
+Password:
+author123
+
+---
+
+### User
+
+Email:
+user@rideally.com
+
+Password:
+user123
+
+---
+
+## Project Overview
+
+RideAlly CMS is a web-based content management platform designed to simplify article publishing, collaboration, and content moderation. The system provides role-based access control, allowing different types of users to interact with the platform according to their responsibilities.
+
+This project was developed during summer training to gain practical experience in backend development using Core PHP and to understand how real-world applications are structured using the MVC architectural pattern.
+
+The application demonstrates concepts such as authentication, authorization, routing, database connectivity, CRUD operations, session handling, and deployment on a production server.
+
+---
+
 ## Technology Stack
 
-* PHP (Core PHP)
-* MySQL
-* Bootstrap 5
-* HTML5
-* CSS3
-* JavaScript
-* MVC Architecture
-* Apache (XAMPP)
-* Git and GitHub
-* InfinityFree Hosting
+- PHP (Core PHP)
+- MySQL
+- Bootstrap 5
+- HTML5
+- CSS3
+- JavaScript
+- Apache (XAMPP)
+- Git and GitHub
+- InfinityFree Hosting
 
-## Project Architecture
+---
 
-This application follows the MVC (Model–View–Controller) architectural pattern.
+## MVC Architecture
+
+This project follows the **Model–View–Controller (MVC)** architectural pattern.
 
 ### Model
 
-Responsible for database interaction and business logic.
+Handles database operations and business logic.
 
 Location:
 
@@ -43,14 +90,14 @@ app/models/
 
 Examples:
 
-* User.php
-* Post.php
-* Category.php
-* Comment.php
+- User.php
+- Post.php
+- Category.php
+- Comment.php
 
 ### View
 
-Responsible for presenting data to users through the interface.
+Responsible for presenting information to users through the interface.
 
 Location:
 
@@ -60,10 +107,10 @@ app/views/
 
 Examples:
 
-* Authentication pages
-* Dashboard pages
-* Public pages
-* Layout components
+- Public pages
+- Authentication pages
+- Dashboard pages
+- Layout components
 
 ### Controller
 
@@ -77,17 +124,17 @@ app/controllers/
 
 Examples:
 
-* HomeController
-* AuthController
-* PostController
-* DashboardController
-* CategoryController
-* UserController
-* CommentController
+- HomeController
+- AuthController
+- DashboardController
+- PostController
+- CategoryController
+- UserController
+- CommentController
 
 ### Core Components
 
-Contains application infrastructure and reusable functionality.
+Contains reusable functionality and application infrastructure.
 
 Location:
 
@@ -97,8 +144,10 @@ core/
 
 Examples:
 
-* Router
-* Helper functions
+- Router.php
+- helpers.php
+
+---
 
 ## Folder Structure
 
@@ -125,58 +174,63 @@ RideAlly-CMS/
 └── .htaccess
 ```
 
+---
+
 ## Key Features
 
 ### Public Features
 
-* View published articles
-* Browse posts by category
-* Search articles
-* Read complete articles
-* User registration
-* User login
+- Browse published articles
+- View posts by category
+- Search functionality
+- Read full articles
+- User registration
+- User login
 
 ### Authentication Features
 
-* Secure login system
-* Password hashing
-* Session management
-* Logout functionality
+- Session-based authentication
+- Secure password handling
+- Login and logout functionality
+- Role-based access restrictions
 
 ### Dashboard Features
 
-* Personalized dashboard
-* Statistics overview
-* Navigation based on user roles
+- Personalized dashboard
+- Statistics overview
+- Navigation according to assigned role
 
 ### Post Management
 
-* Create new posts
-* Edit existing posts
-* Delete posts
-* Approve submitted posts
-* Reject posts
-* Publish workflow support
+- Create posts
+- Edit posts
+- Delete posts
+- Approve submitted articles
+- Reject articles
+- Publish workflow management
 
 ### Category Management
 
-* Create categories
-* Edit categories
-* Delete categories
-* Organize posts efficiently
+- Create categories
+- Edit categories
+- Delete categories
+- Organize posts effectively
 
 ### User Management
 
-* View users
-* Create users
-* Edit user details
-* Delete users
-* Role assignment
+- View users
+- Create users
+- Edit user information
+- Delete users
+- Assign user roles
 
 ### Comment System
 
-* Add comments on posts
-* Store and display user feedback
+- Add comments on posts
+- Store user feedback
+- Display comments on articles
+
+---
 
 ## User Roles
 
@@ -184,97 +238,41 @@ RideAlly-CMS/
 
 Permissions:
 
-* Full access to the system
-* Manage users
-* Manage posts
-* Manage categories
-* Approve or reject articles
-* Access administrative dashboard
+- Complete system access
+- Manage users
+- Manage categories
+- Manage all posts
+- Approve or reject articles
+- Access administrator dashboard
 
 ### Editor
 
 Permissions:
 
-* Review submitted posts
-* Approve or reject articles
-* Edit published content
-* Manage categories
+- Review submitted posts
+- Approve or reject content
+- Edit articles
+- Manage categories
 
 ### Author
 
 Permissions:
 
-* Create posts
-* Edit own posts
-* Delete own posts
-* Access author dashboard
+- Create posts
+- Edit own posts
+- Delete own posts
+- Access author dashboard
 
 ### User
 
 Permissions:
 
-* Register account
-* Login to the platform
-* View articles
-* Submit comments
+- Register an account
+- Login to the system
+- Browse articles
+- Submit comments
 
-## Demo Credentials
-
-### Administrator
-
-Email:
-
-```text
-admin@rideally.com
-```
-
-Password:
-
-```text
-admin123
-```
-
-### Editor
-
-Email:
-
-```text
-editor@rideally.com
-```
-
-Password:
-
-```text
-editor123
-```
-
-### Author
-
-Email:
-
-```text
-author@rideally.com
-```
-
-Password:
-
-```text
-author123
-```
-
-### User
-
-Email:
-
-```text
-user@rideally.com
-```
-
-Password:
-
-```text
-user123
-```
+---
 
 ## Installation Guide
 
@@ -286,27 +284,29 @@ user123
 git clone https://github.com/KeshavKrishnaMIT/rideally-cms-php-mvcrideally-cms-php-mvc.git
 ```
 
-2. Move the project folder into XAMPP htdocs.
+2. Move the project folder into the XAMPP `htdocs` directory.
 
 3. Start Apache and MySQL using XAMPP.
 
-4. Create a MySQL database.
+4. Create a database named:
 
 ```text
 cms_dbnew
 ```
 
-5. Import the provided SQL file.
+5. Import the provided SQL file into the database.
 
-6. Open the application.
+6. Open the application in your browser.
 
 ```text
 http://localhost/mini_pro_rideally_v2/public/
 ```
 
+---
+
 ## Production Deployment
 
-The project has been successfully deployed on InfinityFree hosting.
+The project has been successfully deployed using InfinityFree hosting.
 
 Production URL:
 
@@ -314,26 +314,32 @@ Production URL:
 https://rideallycms.infinityfreeapp.com/public/
 ```
 
-The deployment includes:
+Deployment highlights:
 
-* Live MySQL database integration
-* Environment-aware configuration
-* Dynamic routing support
-* Public accessibility
+- Environment-aware database configuration
+- Shared codebase for localhost and production
+- Dynamic routing support
+- MySQL database integration
+- Public hosting setup
+
+---
 
 ## Learning Outcomes
 
-This project provided hands-on experience with:
+Through this project, practical experience was gained in:
 
-* MVC application design
-* Core PHP development
-* Database design and integration
-* Session-based authentication
-* Role-based authorization
-* URL routing mechanisms
-* Hosting and deployment workflows
-* Version control using Git and GitHub
-* Debugging production environments
+- Core PHP development
+- MVC architecture implementation
+- Database integration using MySQL
+- Session management
+- Authentication and authorization
+- URL routing mechanisms
+- CRUD operations
+- Hosting and deployment workflows
+- Git and GitHub version control
+- Debugging production environments
+
+---
 
 ## Developer Information
 
@@ -345,11 +351,12 @@ B.Tech Student
 Summer Training Project
 ```
 
+---
+
 ## Project Title
 
 ```text
 RideAlly Summer Training Project Version Two
 ```
 
-This project was developed for academic learning purposes to demonstrate the implementation of a role-based content management system using PHP MVC architecture and modern web development practices.
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b7a2d72f-84a1-425f-8614-71cda56c5b6e" />
+This project was developed as part of summer training to demonstrate the implementation of a role-based Content Management System using Core PHP and MVC architecture principles.
