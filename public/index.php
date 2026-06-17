@@ -59,7 +59,26 @@ $router->add('comments/store',               ['CommentController', 'store']);
 
 $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-$basePath = '/mini_pro_rideally_v2/public';
+if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false ||
+    strpos($_SERVER['HTTP_HOST'], '127.0.0.1') !== false) {
+
+    $basePath = '/mini_pro_rideally_v2/public';
+
+} else {
+
+    $basePath = '/public';
+
+}
+
 $url = trim(str_replace($basePath, '', $requestUri), '/');
+
+/*
+|--------------------------------------------------------------------------
+| Remove index.php if present
+|--------------------------------------------------------------------------
+*/
+if (strpos($url, 'index.php') === 0) {
+    $url = trim(substr($url, strlen('index.php')), '/');
+}
 
 $router->dispatch($url);
